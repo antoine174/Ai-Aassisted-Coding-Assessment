@@ -2,9 +2,15 @@ package com.shopsphere.controller;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.shopsphere.model.*;
-import com.shopsphere.repository.*;
-import org.junit.jupiter.api.*;
+import com.shopsphere.model.Customer;
+import com.shopsphere.model.Order;
+import com.shopsphere.model.OrderItem;
+import com.shopsphere.model.Product;
+import com.shopsphere.repository.CustomerRepository;
+import com.shopsphere.repository.OrderRepository;
+import com.shopsphere.repository.ProductRepository;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
